@@ -10,6 +10,10 @@ app.get("/home", (req,res) => {
   res.send("Home Page");
 });
 
+app.get("/dashboard", (req,res) =>{
+  res.send("Dashboard Page");
+});
+
 app.listen(port, () => {
   console.log(`App listening at http://localhost:${port}`);
 });
